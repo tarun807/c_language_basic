@@ -1,2 +1,2 @@
 # c_language_basic
-Learning how to code 
+Learning how to code from Programiz channel 
