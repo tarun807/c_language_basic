@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void multipyNumbers(){
+    int number1, number2;
+    printf("Enter values: ");
+    scanf("%d %d", &number1, &number2);
+    int multiplication=number1*number2;
+    printf("Multiplication of %d and %d = %d", number1, number2, multiplication);
+}
+
+int main() {
+    multipyNumbers();
+    return 0;
+}
