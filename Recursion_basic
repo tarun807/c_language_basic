@@ -1,0 +1,41 @@
+// From lecture 
+#include <stdio.h>
+
+int sum(int n);
+int main(){
+    int number, result;
+    printf("Enter Num: ");
+    scanf("%d", &number);
+    result=sum(number);
+    printf("Sum= %d", result);
+    return 0;
+}
+int sum(int n){
+    if(n !=0){
+        return n + sum(n-1);
+    }
+    else{
+        return n;
+    }
+}
+
+// To print factorial of number 
+#include <stdio.h>
+
+int factorial(int n);
+int main(){
+    int number;
+    printf("Enter num: ");
+    scanf("%d", &number);
+    int result=factorial(number);
+    printf("Result= %d", result);
+    return 0;
+}
+int factorial(int n){
+    if(n != 0){
+        return n * factorial(n-1);
+    }
+    else{
+        return 1;
+    }
+}
