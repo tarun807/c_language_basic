@@ -1,0 +1,34 @@
+// EASY APPROACH
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+  int number;
+  printf("Enter Num: ");
+  scanf("%d", &number);
+  double result1=sqrt(number);
+  double result2=pow(number,result1);
+  printf("Value of squareroot and power is %lf and %lf", result1, result2);
+  return 0;
+}
+
+// Using Function 
+#include <stdio.h>
+#include <math.h>
+
+double number;
+
+int takeInput(){
+    number;
+    printf("Enter Num: ");
+    scanf("%lf", &number);
+    return number;
+}
+
+int main(){
+    double result=takeInput();
+    double squareRoot=sqrt(result);
+    double power=pow(number,squareRoot);
+    printf("SuareRoot and Power are %lf & %lf", squareRoot, power);
+    return 0;
+}
