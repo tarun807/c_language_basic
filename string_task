@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char str[25];
+    printf("Enter your name: ");
+    scanf("%s", str);
+    str[0]='X';  
+    printf("%s", str);  //This one only prints for names without space
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    char str[25];
+    printf("Enter your name: ");
+    fgets(str,sizeof(str),stdin);
+    str[0]='X';
+    printf("%s", str);  //Can print the names with spaces too
+    return 0;
+}
