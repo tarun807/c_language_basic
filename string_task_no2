@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    char text1[20], text2[20];
+    printf("Enter the input values: ");
+    // scanf("%s %s", text1, text2);
+    fgets(text1, sizeof(text1), stdin);
+    fgets(text2, sizeof(text2), stdin);
+    int result1, result2;
+    result1=strlen(text1);
+    result2=strlen(text2);
+    if(result1>=result2){
+        printf("Input 1 is greater");
+    }else{
+        printf("Input 2 is greater");
+    }
+    return 0;
+}
