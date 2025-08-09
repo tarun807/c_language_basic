@@ -1,0 +1,14 @@
+// In this code, I have created a pointer that updates the value of salary
+#include <stdio.h>
+
+int main() {
+    double salary;
+    printf("Enter previous salary: ");
+    scanf("%lf", &salary);
+    double* ptr=&salary;
+    printf("Address: %p\n", ptr);
+    *ptr= 2*salary;
+    printf("New Salary: %lf", salary);
+    return 0;
+}
+
