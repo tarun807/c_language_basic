@@ -1,0 +1,38 @@
+// In this code, we have implemented a loop to print all the values of the array with their address using the & 
+#include <stdio.h>
+
+int main() {
+    int number[5]={1,3,5,7,9};
+    for(int i=0;i<5;++i){
+        printf("%d=%p\n", number[i], &number[i]);
+    }
+    printf("Address: %p", number);
+    return 0;
+}
+
+// In this code, we have implemented a loop to print all the values of the array with their address without using the & symbol 
+#include <stdio.h>
+
+int main() {
+    int number[5]={1,3,5,7,9};
+    for(int i=0;i<5;++i){
+        printf("%d=%p\n", number[i], number+i);
+    }
+    printf("Address: %p", number);
+    return 0;
+}
+
+// TO find largest number in the array
+#include <stdio.h>
+
+int main() {
+    int arr[5]={34,12,21,54,48};
+    int largest=*arr;
+    for(int i=0;i<5;++i){
+        if(largest<=*(arr+i)){
+            largest=arr[i];
+        }
+    }
+    printf("%d", largest);
+    return 0;
+}
