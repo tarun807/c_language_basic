@@ -12,3 +12,16 @@ int main() {
     return 0;
 }
 
+//Can do it this way too 
+#include <stdio.h>
+
+int main() {
+    double salary;
+    printf("Enter salary: ");
+    scanf("%lf", &salary);
+    double* pointer=&salary;
+    printf("Address: %p", pointer);
+    *pointer=2*salary;
+    printf("\n%lf", *pointer);
+    return 0;
+}
