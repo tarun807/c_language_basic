@@ -1,0 +1,17 @@
+// Multily two number using pointer 
+#include <stdio.h>
+
+int* multiplyNumber(int* num1, int* num2, int * prod){
+    *prod=*num1 * *num2;
+    return prod;
+}
+
+int main() {
+   int number1=13;
+   int number2=9;
+   int product;
+   
+   int* result=multiplyNumber(&number1, &number2, &product);
+   printf("Result: %d", *result);
+    return 0;
+}
