@@ -1,0 +1,37 @@
+// Using a function to find a square 
+#include <stdio.h>
+
+void find_square(int* num){
+    int square=*num * *num;
+    *num=square;
+    printf("Square: %d", *num);
+}
+
+int main() {
+    int number;
+    printf("Enter the num to find square: ");
+    scanf("%d", &number);
+    
+    find_square(&number);
+    return 0;
+}
+
+// To return value from the function
+#include <stdio.h>
+
+int* findSquare(int* num){
+    int square = *num * *num;
+    *num=square;
+    return num;
+    
+}
+
+int main() {
+    int number;
+    printf("Enter the number to find the square: ");
+    scanf("%d", &number);
+    int* result=findSquare(&number);
+    printf("%d", *result);
+    
+    return 0;
+}
