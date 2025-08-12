@@ -1,0 +1,38 @@
+// To do sum and can implement other operations change the sign 
+#include <stdio.h>
+
+void addNumbers(int* num1, int* num2){
+    int sum=*num1+*num2;
+    printf("Sum: %d\n", sum);
+    
+}
+
+int main() {
+    int number1, number2;
+    printf("Enter 2 values: ");
+    scanf("%d %d", &number1, &number2);
+    
+    addNumbers(&number1, &number2);
+
+    return 0;
+}
+
+// Using pointers and ggeting the values 
+#include<stdio.h>
+
+int* addNumbers(int* numb1, int* numb2, int* sum){
+    *sum= *numb1+ *numb2;
+    return sum;
+}
+
+int main(){
+    int number1=1;
+    int number2=2;;
+    int sum;
+    
+    int* result= addNumbers(&number1, &number2, &sum);
+    
+    printf("Result: %d", *result);
+     
+    return 0;
+}
