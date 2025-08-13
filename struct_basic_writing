@@ -60,3 +60,25 @@ int main() {
     printf("\nAge: %d", person2.age);
     return 0;
 }
+
+//Using typedef type as an alias 
+
+#include <stdio.h>
+
+typedef struct Person{
+    double salary;
+    int age;
+}person;//created an alias of person that can be used as an alias 
+
+int main() {
+    person person1={.salary=12345, .age=25};// Used 'peron as an alias instead of using struct Person '
+
+    printf("Salary: %lf", person1.salary);
+    printf("\nAge: %d", person1.age);
+    
+    person person2={.salary=54123, .age=22};
+ 
+    printf("\nSalary: %lf", person2.salary);
+    printf("\nAge: %d", person2.age);
+    return 0;
+}
