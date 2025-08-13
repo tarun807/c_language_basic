@@ -1,0 +1,62 @@
+//Using struct basics 
+#include <stdio.h>
+
+struct Person{
+    double salary;
+    int age;
+};
+
+int main() {
+    struct Person person1;
+    person1.salary=41235;
+    person1.age=25;
+    printf("Salary: %lf", person1.salary);
+    printf("\nAge: %d", person1.age);
+    struct Person person2;
+    person2.salary=231456;
+    person2.age=31;
+    printf("\nSalary: %lf", person2.salary);
+    printf("\nAge: %d", person2.age);
+    return 0;
+}
+
+//Can assign the value to struct like this 
+#include <stdio.h>
+
+struct Person{
+    double salary;
+    int age;
+};
+
+int main() {
+    struct Person person1={.salary=12345, .age=25};// Like this 
+
+    printf("Salary: %lf", person1.salary);
+    printf("\nAge: %d", person1.age);
+    
+    struct Person person2={.salary=54123, .age=22};//LIke this 
+ 
+    printf("\nSalary: %lf", person2.salary);
+    printf("\nAge: %d", person2.age);
+    return 0;
+}
+
+// Here i defined the person 1 and 2 in struct variable 
+#include <stdio.h>
+
+struct Person{
+    double salary;
+    int age;
+}person1, person2;
+
+int main() {
+    person1.salary=41235;
+    person1.age=25;
+    printf("Salary: %lf", person1.salary);
+    printf("\nAge: %d", person1.age);
+    person2.salary=231456;
+    person2.age=31;
+    printf("\nSalary: %lf", person2.salary);
+    printf("\nAge: %d", person2.age);
+    return 0;
+}
