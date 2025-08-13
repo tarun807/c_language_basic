@@ -1,0 +1,18 @@
+// SUBTRACT 3 COMPLEX NUMBER 
+#include <stdio.h>
+
+typedef struct Complex{
+    double real;
+    double imagi;
+}complex;
+
+int main() {
+    complex c1={.real=21, .imagi=2.258};
+    complex c2={.real=13, .imagi=7.258};
+    complex c3={.real=24, .imagi=21.858};
+    complex sub;
+    sub.real=c1.real-c2.real-c3.real;
+    sub.imagi=c1.imagi-c2.imagi-c3.imagi;
+    printf("Sub of 3 number is %.2lf + (%.2lfi): ", sub.real, sub.imagi);
+    return 0;
+}
