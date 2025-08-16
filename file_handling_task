@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    FILE* fptr;
+    fptr=fopen("newfile.txt", "w");
+    fputs("I love C programming\n", fptr);
+    fputs("Completing my C programming journey with programiz", fptr);
+fclose(fptr);
+    fptr=fopen("newfile.txt", "r");
+    char content[1000];
+    if(fptr != NULL){
+        while(fgets(content , 1000, fptr)){
+            printf("%s", content);
+        }
+    }else{
+        printf("File open unsuccesfull");
+    }
+    
+    return 0;
+}
